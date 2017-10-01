@@ -36,7 +36,7 @@ This will make all properties from [UnixSystem](https://docs.oracle.com/javase/8
 **Generic**
 
 | Property | Description |
-|----------|-------------|
+|:---------|:------------|
 | org.fuin.smp.uid | UID for the current Unix user or printable primary group SID for the current NT user (String) |
 | org.fuin.smp.gid | GID for the current Unix user or printable SID for the current NT user (String) |
 | org.fuin.smp.username | Username for the current user (String) |
@@ -45,12 +45,16 @@ This will make all properties from [UnixSystem](https://docs.oracle.com/javase/8
 **UnixSystem**
 
 | Property | Description |
-|----------|-------------|
+|:---------|:------------|
 | org.fuin.smp.unix.gid | GID for the current Unix user (long) |
 | org.fuin.smp.unix.groups | Supplementary groups for the current Unix user (long[]) |
 | org.fuin.smp.unix.uid | UID for the current Unix user (long) |
 | org.fuin.smp.unix.username | Username for the current Unix user (String) |
 
+## Limitations
+
+Currently only Unix like systems are supported. It should also be possible to include [NTSystem](https://docs.oracle.com/javase/8/docs/jre/api/security/jaas/spec/com/sun/security/auth/module/NTSystem.html) 
+but somehow the class was missing in my local Java 8 JRE and I hadn't enough time to investigate this. 
 
 ### Snapshots
 

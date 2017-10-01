@@ -51,10 +51,10 @@ This will make all properties from [UnixSystem](https://docs.oracle.com/javase/8
 | org.fuin.smp.unix.uid | UID for the current Unix user (long) |
 | org.fuin.smp.unix.username | Username for the current Unix user (String) |
 
-## Limitations
+### Limitations
 
 Currently only Unix like systems are supported. It should also be possible to include [NTSystem](https://docs.oracle.com/javase/8/docs/jre/api/security/jaas/spec/com/sun/security/auth/module/NTSystem.html) 
-but somehow the class was missing in my local Java 8 JRE and I hadn't enough time to investigate this. 
+but somehow the class was missing in my local Java 8 JRE and I hadn't enough time to investigate this. Any help welcome.
 
 ### Snapshots
 

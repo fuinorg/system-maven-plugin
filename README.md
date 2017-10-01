@@ -12,23 +12,23 @@ This [Maven](https://maven.apache.org/) plugin provides UnixSystem values like "
 Just add the plugin to your Maven POM:
 ```xml
 <plugin>
-	<groupId>org.fuin.smp</groupId>
-	<artifactId>system-maven-plugin</artifactId>
-	<version>0.1.0</version>
-	<!-- You can optionally change the prefixes
-	<configuration>
-		<generic-prefix>org.fuin.smp.</generic-prefix>
-		<unix-prefix>org.fuin.smp.unix.</unix-prefix>
-	</configuration>
-	-->
-	<executions>
-		<execution>
-			<phase>initialize</phase>
-			<goals>
-				<goal>read-system-information</goal>
-			</goals>
-		</execution>
-	</executions>
+    <groupId>org.fuin.smp</groupId>
+    <artifactId>system-maven-plugin</artifactId>
+    <version>0.1.0</version>
+    <!-- You can optionally change the prefixes
+    <configuration>
+        <generic-prefix>org.fuin.smp.</generic-prefix>
+        <unix-prefix>org.fuin.smp.unix.</unix-prefix>
+    </configuration>
+    -->
+    <executions>
+        <execution>
+            <phase>initialize</phase>
+            <goals>
+                <goal>read-system-information</goal>
+            </goals>
+        </execution>
+    </executions>
 </plugin>
 ```
 This will make all properties from [UnixSystem](https://docs.oracle.com/javase/8/docs/jre/api/security/jaas/spec/com/sun/security/auth/module/UnixSystem.html) available as project properties.
@@ -36,24 +36,24 @@ This will make all properties from [UnixSystem](https://docs.oracle.com/javase/8
 Here is an example from the [Docker Maven Plugin](https://github.com/fabric8io/docker-maven-plugin) how to use it:
 ```xml
 <plugin>
-	<groupId>io.fabric8</groupId>
-	<artifactId>docker-maven-plugin</artifactId>
-	<version>0.22.1</version>
-	<configuration>
-		<images>
-			<image>
-				<name>your/cool-image</name>
-				<run>
-					<volumes>
-						<bind>
-							<volume>${project.build.directory}:/usr/src/result</volume>
-						</bind>
-					</volumes>
-					<user>${org.fuin.smp.uid}:${org.fuin.smp.gid}</user>
-				</run>
-			</image>
-		</images>
-	</configuration>
+    <groupId>io.fabric8</groupId>
+    <artifactId>docker-maven-plugin</artifactId>
+    <version>0.22.1</version>
+    <configuration>
+        <images>
+            <image>
+                <name>your/cool-image</name>
+                <run>
+                    <volumes>
+                        <bind>
+                            <volume>${project.build.directory}:/usr/src/result</volume>
+                        </bind>
+                    </volumes>
+                    <user>${org.fuin.smp.uid}:${org.fuin.smp.gid}</user>
+                </run>
+            </image>
+        </images>
+    </configuration>
 </plugin>
 ```
 This starts the image with the local user's UID and GID and files written into '${project.build.directory}' will have exactly that owner and group.

@@ -58,12 +58,14 @@ Here is an example from the [Docker Maven Plugin](https://github.com/fabric8io/d
 ```
 This starts the image with the local user's UID and GID and files written into '${project.build.directory}' will have exactly that owner and group.
 
+### Available Properties
+
 **Generic**
 
 | Property | Description |
 |:---------|:------------|
-| org.fuin.smp.uid | UID for the current Unix user or printable primary group SID for the current NT user (String) |
-| org.fuin.smp.gid | GID for the current Unix user or printable SID for the current NT user (String) |
+| org.fuin.smp.uid | UID for the current user (String) |
+| org.fuin.smp.gid | GID for the current user (String) |
 | org.fuin.smp.username | Username for the current user (String) |
 
 

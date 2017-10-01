@@ -2,7 +2,7 @@
 This [Maven](https://maven.apache.org/) plugin provides UnixSystem values like "uid" or "gid" as project properties.
 
 [![Build Status](https://fuin-org.ci.cloudbees.com/job/system-maven-plugin/badge/icon)](https://fuin-org.ci.cloudbees.com/job/system-maven-plugin/)
-[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.fuin.esmp/es-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.fuin.esmp/es-maven-plugin/)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.fuin.smp/system-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.fuin.smp/system-maven-plugin/)
 [![LGPLv3 License](http://img.shields.io/badge/license-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl.html)
 [![Java Development Kit 1.8](https://img.shields.io/badge/JDK-1.8-green.svg)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
 

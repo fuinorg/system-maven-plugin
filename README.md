@@ -33,7 +33,7 @@ Just add the plugin to your Maven POM:
 ```
 This will make all properties from [UnixSystem](https://docs.oracle.com/javase/8/docs/jre/api/security/jaas/spec/com/sun/security/auth/module/UnixSystem.html) available as project properties.
 
-Here is an example from the [Docker Maven Plugin](https://github.com/fabric8io/docker-maven-plugin) how to use it:
+Here is a [Docker Maven Plugin](https://github.com/fabric8io/docker-maven-plugin) example on how to use the properties:
 ```xml
 <plugin>
     <groupId>io.fabric8</groupId>

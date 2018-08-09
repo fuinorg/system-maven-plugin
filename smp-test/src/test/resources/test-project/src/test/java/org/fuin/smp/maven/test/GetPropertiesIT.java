@@ -1,6 +1,6 @@
 package org.fuin.smp.maven.test;
 
-import static org.fest.assertions.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThat;
 
 import java.io.IOException;
 

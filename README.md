@@ -4,7 +4,12 @@ This [Maven](https://maven.apache.org/) plugin provides UnixSystem values like "
 [![Java Maven Build](https://github.com/fuinorg/system-maven-plugin/actions/workflows/maven.yml/badge.svg)](https://github.com/fuinorg/system-maven-plugin/actions/workflows/maven.yml)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.fuin.smp/system-maven-plugin/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.fuin.smp/system-maven-plugin/)
 [![LGPLv3 License](http://img.shields.io/badge/license-LGPLv3-blue.svg)](https://www.gnu.org/licenses/lgpl.html)
-[![Java Development Kit 1.8](https://img.shields.io/badge/JDK-1.8-green.svg)](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+[![Java Development Kit 11](https://img.shields.io/badge/JDK-11-green.svg)](https://openjdk.java.net/projects/jdk/11/)
+
+## Versions
+- 0.2.x (or later) = **Java 11**
+- 0.1.0 = **Java 8**
+
 
 ### Getting started
 Just add the plugin to your Maven POM:
